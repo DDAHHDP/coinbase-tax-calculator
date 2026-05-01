@@ -1,4 +1,15 @@
 .idea
 .ipynb_checkpoints
-
-coinbase_pro_transactions_*.csv
+__pycache__/
+.venv-test/
+/tests/.tmp/
+/reports/**
+!/reports/
+!/reports/.gitkeep
+!/reports/README.md
+/transaction_data/**
+!/transaction_data/
+!/transaction_data/.gitkeep
+!/transaction_data/README.md
+*.whl
+/docs/

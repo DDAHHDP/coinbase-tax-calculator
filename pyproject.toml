@@ -1,15 +1,21 @@
 [tool.poetry]
 name = "coinbase-tax-calculator"
 version = "0.1.0"
-description = ""
+package-mode = false
+description = "Coinbase reporting utilities for perpetual futures PnL and BTC Intx cost-basis tracking."
 authors = ["Tyler Vick <vick.tyler@gmail.com>"]
+maintainers = ["Kazimieras Bagdonas <kazimieras.bagdonas@ktu.lt>"]
+readme = "README.md"
+keywords = ["coinbase", "tax", "crypto", "bitcoin", "perpetuals"]
 
 [tool.poetry.dependencies]
-python = "^3.10"
-pandas = "^1.4.1"
-jupyterlab = "^3.3.0"
+python = ">=3.10,<4.0"
 
-[tool.poetry.dev-dependencies]
+[tool.poetry.group.dev]
+optional = true
+
+[tool.poetry.group.dev.dependencies]
+jupyterlab = ">=4.4.0,<5.0"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
